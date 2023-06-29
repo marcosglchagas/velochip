@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velochip</title>
+    <link rel="shortcut icon" href="../imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="../estilos/layout.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/formulario.css">
+    <script src="../scripts/contato.js"></script>
+</head>
+<body>
+    <header>
+        <br>
+        <img src="../imagens/header.png" alt="logomarca">
+    </header>
+
+
+        <section class="section">
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../paginas/contato.html">Contato</a></li>
+                    <li><a href="../paginas/localizacao.html">Localização</a></li>
+                    <li class="dropdown"><a>Serviços</a>
+                        <div class="dropdownMenu">
+                            <a href="../paginas/loja.html">Loja Virtual</a>
+                            <a>História da Empresa</a>
+                            <a href="../paginas/fotos.html">Fotos da Empresa</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <form> 
+                    <fieldset id="contato" class="confirmacao">
+                        <h3>CONTATO</h3>
+                        <p>Se desejar entrar em contato, preencha o formulário</p>   
+                        <label for="nome">Nome (Obrigatório)</label><br> 
+                        <input type="text" id="nome" name="nome" placeholder="Cliente"><br><br>
+                        <label for="Email">Email (Obrigatório):</label><br>
+                        <input type="email" id="email" name="Email" placeholder="cliente@gmail.com"><br><br>
+                        <label for="data">Data do contato:</label><br>
+                        <input type="date" id="data" name="data"><br><br>
+                        <label for="telefone">Telefone para contato:</label><br>
+                        <input type="tel" id="telefone" name="telefone"><br><br>
+                        <label for="Tipo">Tipo (Obrigatório):</label><br>
+                        <select id="opcoes" name="opcoes">
+                            <option id="a" value="Cotacao">Cotação</option>
+                            <option id="b" value="reclamacao">Reclamação</option>
+                            <option id="c" value="duvida">Dúvida</option>
+                        </select><br><br>
+                        <label for="comentarios">Comentários (Obrigatório):</label><br>
+                        <textarea rows="5" cols="40" maxlenght="200" placeholder="Gostaria de uma cotação do produto A"></textarea><br><br>
+                        <button type="button" id="enviar" onclick="Contato()">Enviar</button>
+                        <button type="reset" id="limpar">Limpar</button>
+                    </fieldset>
+                    <fieldset id="confirm" class="confirmacao">
+                        <h3>Confirmação dos Dados de Contato</h3>
+                        Nome: <label id="nomeresp"></label>
+                        <br>
+                        Email: <label id="emailresp"></label>
+                        <br>
+                        Tipo: <label id="tiporesp"></label>
+                        <br>
+                        Data: <label id="dataresp"></label>
+                        <br>
+                        Telefone para Contato: <label id="telefoneresp"></label>
+                        <br>
+
+                    </fieldset>
+
+                    
+                </form>
+
+            </main>
+            <aside>
+             <!--Nossa empresa é sediada na cidade de Sorocaba e estamos desde 2003 no mercado oferecendo um trabalho de qualidade, com rapidez e segurança para nossos clientes.-->
+            </aside>
+
+
+        </section>
+
+
+        <footer>
+            instagram: @velochip
+        </footer> 
+
+</body>
+</html>
